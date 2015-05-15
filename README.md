@@ -1,8 +1,6 @@
 # simplewebapp
 Simple Web Aplication
 
-Specification:
-
 Goal:
 
 Tools used:
