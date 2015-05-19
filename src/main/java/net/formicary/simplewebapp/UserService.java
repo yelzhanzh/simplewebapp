@@ -19,7 +19,7 @@ import java.util.List;
  * Created by Zhangariny on 11/05/2015.
  */
 
-@Path("/users")
+@Path("/user")
 @Produces("application/json")
 @Service
 public class UserService {

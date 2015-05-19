@@ -6,7 +6,7 @@ var simpleWebAppServices = angular.module('simpleWebAppServices',['ngResource'])
 
 simpleWebAppServices.factory('UsersFactory',['$resource',
     function($resource) {
-        return $resource('rest/users', {}, {
+        return $resource('rest/user', {}, {
             query: {method: 'GET', isArray: true},
             create: {method: 'POST'}
         })
@@ -14,7 +14,7 @@ simpleWebAppServices.factory('UsersFactory',['$resource',
 
 simpleWebAppServices.factory('UserFactory',['$resource',
     function($resource) {
-        return $resource('rest/users/:id', {}, {
+        return $resource('rest/user/:id', {}, {
             show: { method: 'GET' },
             update: {method: 'PUT', params: {id: '@id'}},
             delete: {method: 'DELETE', params: {id: '@id'}}
