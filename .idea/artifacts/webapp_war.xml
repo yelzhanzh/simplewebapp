@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="webapp:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="com.webapp.war">
+    <root id="archive" name="net.formicary.simplewebapp.war">
       <element id="artifact" artifact-name="webapp:war exploded" />
     </root>
   </artifact>

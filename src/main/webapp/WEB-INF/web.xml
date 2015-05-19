@@ -12,7 +12,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>com.webapp.config.AppConfig</param-value>
+        <param-value>net.formicary.simplewebapp.config.AppConfig</param-value>
     </context-param>
 
     <context-param>

@@ -1,4 +1,4 @@
-package com.webapp.config;
+package net.formicary.simplewebapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,7 +21,7 @@ import java.sql.SQLException;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = "com.webapp")
+@ComponentScan(basePackages = "net.formicary.simplewebapp")
 public class AppConfig {
 
     @Bean
@@ -42,7 +42,7 @@ public class AppConfig {
         vendorAdapter.setDatabasePlatform("org.hibernate.dialect.H2Dialect");
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("com/webapp");
+        factory.setPackagesToScan("net/formicary/simplewebapp");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
 

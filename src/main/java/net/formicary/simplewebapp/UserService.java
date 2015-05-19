@@ -1,5 +1,7 @@
 package net.formicary.simplewebapp;
 
+import net.formicary.simplewebapp.users.dao.UserDao;
+import net.formicary.simplewebapp.users.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.ws.rs.*;

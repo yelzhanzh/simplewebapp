@@ -1,6 +1,7 @@
-package com.webapp.users.dao;
+package net.formicary.simplewebapp.users.dao;
 
-import com.webapp.users.model.User;
+import net.formicary.simplewebapp.users.model.User;
+import net.formicary.simplewebapp.users.model.User;
 
 import java.util.List;
 

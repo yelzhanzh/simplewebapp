@@ -1,4 +1,4 @@
-package com.webapp.users.dao.impl;
+package net.formicary.simplewebapp.users.dao.impl;
 
 ///**
 // * Created by Zhangariny on 12/05/2015.
@@ -6,8 +6,8 @@ package com.webapp.users.dao.impl;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import com.webapp.users.dao.UserDao;
-import com.webapp.users.model.User;
+import net.formicary.simplewebapp.users.dao.UserDao;
+import net.formicary.simplewebapp.users.model.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
