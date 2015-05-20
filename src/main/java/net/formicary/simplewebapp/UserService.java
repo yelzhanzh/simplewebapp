@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import net.formicary.simplewebapp.users.model.User;
 import net.formicary.simplewebapp.users.dao.UserDao;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -47,8 +48,8 @@ public class UserService {
 //        getUserDao().save(testUser2);
         //List<User> users = MockUserTable.getAll();
 
-        List<User> users = getUserDao().findAll();
-        GenericEntity<List<User>> ge = new GenericEntity<List<User>>(users){};
+        Collection<User> users = getUserDao().findAll();
+        GenericEntity<Collection<User>> ge = new GenericEntity<Collection<User>>(users){};
         return Response.ok(ge).build();
 
     }

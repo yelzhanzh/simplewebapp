@@ -1,9 +1,8 @@
 package net.formicary.simplewebapp.users.dao;
 
 import net.formicary.simplewebapp.users.model.User;
-import net.formicary.simplewebapp.users.model.User;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created by Zhangariny on 12/05/2015.
@@ -19,6 +18,6 @@ public interface UserDao {
 
     User findId(Integer id);
 
-    List<User> findAll();
+    Collection<User> findAll();
 
 }
