@@ -67,5 +67,4 @@ public class AppConfig {
         return new HibernateExceptionTranslator();
     }
 
-
 }
